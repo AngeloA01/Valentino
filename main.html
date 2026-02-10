@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+
+<link rel = "stylesheet" href =/Users/angeloagathangelou/Desktop/HTML_Projects/romValThing/styles.css>
+
+<body id = overBody class = background>
+
+
+<!-- 
+<div id = sideBanner class = > <br> ensemble outfits.
+<div id = title class = pageTitle>Some things for you...</div>
+<button id = icon1 class = menuTab>home</button>
+<button id = icon2 class = menuTab>search</button>
+<button id = icon3 class = menuTab>explore</button>
+<button id = icon4 class = menuTab>saved</button>
+<button id = icon5 class = menuTab>login</button> -->
+
+<div id = thequestion class="questionBox">Will you be my Valentine?</div>
+
+<img id = miffyFlowers src="/Users/angeloagathangelou/Desktop/HTML_Projects/romValThing/miffyFlowers.jpeg" class=miffyBox>
+<img id = hearts src="/Users/angeloagathangelou/Desktop/HTML_Projects/romValThing/hearts.gif" class="miffyBox">
+<div id = yesButton class=loveButton>Yes</div>
+<div id = noButton class=noButton>No</div>
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function goto2(){
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/romValThing/yay.html";
+    }
+    function goto3(){
+        
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/romValThing/betrayal.html";
+    }
+
+
+
+
+    yesButton.addEventListener("click", goto2);
+    noButton.addEventListener("click", goto3);
+
+</script>
+
+
+
+<!-- <script>
+
+    //productTouch("200px", "300px", "20%", "20%");
+    multiplePosts();
+    document.getElementById("sideBanner").style.width = "160px";
+
+    var productURL = "";
+    
+    function gotoProductPage(){
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/Ensemble/pagesHTML/" + productURL;
+    }
+
+    function goto2(){
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/Ensemble/pagesHTML/search.html";
+    }
+    function goto3(){
+        
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/Ensemble/pagesHTML/explore.html";
+    }
+    function goto4(){
+        
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/Ensemble/pagesHTML/saved.html";
+    }
+    function goto5(){
+       
+        window.location.href = "/Users/angeloagathangelou/Desktop/HTML_Projects/Ensemble/pagesHTML/login.html";
+    }
+    
+    function productTouch(wid, hght, tp, lft, num){
+        a = document.createElement("div");
+        des = document.createElement("div");
+        content = document.createElement("div");
+
+        a.setAttribute("id", "disp" + num.toString());
+        des.setAttribute("id", "des" + num.toString());
+        
+
+        a.setAttribute("class", "productDisplay");
+        des.setAttribute("class", "productDescription");
+        content.setAttribute("class", "descriptionArea");
+        
+
+        a.style.width = wid;
+        a.style.height = hght;
+        a.style.top = tp;
+        a.style.left = lft;
+
+        des.style.width = wid;
+        des.style.height = hght;
+        des.style.top = tp;
+        des.style.left = lft;
+
+        content.innerHTML= "\tThis product is a truly magnificent design. ";
+        
+
+        a.style.backgroundImage = "url('/Users/angeloagathangelou/Desktop/HTML_Projects/Ensemble/assets/exampleImage" + (num+1).toString() + ".jpeg')";
+
+        des.appendChild(content);
+        document.body.appendChild(des);
+        document.body.appendChild(a);
+        
+
+        a.addEventListener('mouseover', function() {
+            des = document.getElementById("des" + num.toString());
+            des.style.height = "375px";
+            
+            
+        });
+        a.addEventListener('mouseout', function() {
+            des = document.getElementById("des" + num.toString());
+            des.style.height = "300px";
+            
+        });
+        a.addEventListener('click', function() {
+            productURL = this.id + ".html";
+            gotoProductPage();
+        });
+        
+
+    }
+
+    
+
+    function multiplePosts(){
+        wid = "200px";
+        height = "300px";
+        tp = 125;
+        lft = 200;
+
+        
+        for (i = 0; i < 6; i++){
+            if (i % 3 == 0 && i >=2){
+                tp = tp + 400;
+            }
+
+            if (i % 3 == 0){
+                lft = 200;
+            }
+            else {lft += 225;}
+            productTouch(wid, height, tp.toString() + "px", lft.toString() + "px", i);
+        }
+    }
+
+    
+
+    function sideSetup(){
+    
+        document.getElementById("icon1").style.top = "50px";
+        document.getElementById("icon2").style.top = "70px";
+        document.getElementById("icon3").style.top = "90px";
+        document.getElementById("icon4").style.top = "110px";
+        document.getElementById("icon5").style.top = "130px";
+    
+        document.getElementById("icon1").style.backgroundColor = "rgb(255, 230, 198)";
+        document.getElementById("icon1").style.color = "rgb(178 172 136)";
+    
+        
+    }
+
+    sideSetup();
+
+
+    sideBanner.addEventListener('mouseout', function() {
+        document.getElementById("sideBanner").style.width = "120px";
+        }
+    );
+    sideBanner.addEventListener('mouseover', function() {
+        document.getElementById("sideBanner").style.width = "160px";
+        }
+    );
+    icon2.addEventListener('click', goto2);
+    icon3.addEventListener('click', goto3);
+    icon4.addEventListener('click', goto4);
+    icon5.addEventListener('click', goto5);
+    
+    
+</script> -->
+
+
+
+
