@@ -51,33 +51,14 @@
 
 .betrayalBox{
     
-    /* background-color : rgb(255, 50, 50);
-    border-style : solid;
-    border-color : rgb(255, 50, 50);
-    color : white;
-    font-size : 50px;
-    border-radius: 25px;
-    height : 100px;
-    width : 50%;
-    line-height : 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-    max-width: fit-content;
-    max-height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
- 
-    
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
     
     color : black;
     font-size : 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+    
     
 }
 
